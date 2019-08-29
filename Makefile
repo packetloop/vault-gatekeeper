@@ -1,10 +1,6 @@
 PROJECT_NAME := vault-gatekeeper
 package = github.com/packetloop/$(PROJECT_NAME)
 
-.PHONY: test
-test: dep env
-	HOST=$(HOST) PORT=$(PORT) TF_ACC=$(TF_ACC) go test -race -cover -v ./...
-
 .PHONY: dep
 dep:
 	$(eval GO111MODULE := on)
