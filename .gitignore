@@ -33,4 +33,4 @@ vltgatekeeper
 *.iml
 bin
 vendor/
-py-test/
+py-test/release
