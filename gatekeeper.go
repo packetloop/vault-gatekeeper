@@ -505,7 +505,7 @@ func (g *Gatekeeper) bypassSchedulerCheck(providerKey string, requestedRole stri
 						RoleId:   roleId,
 						SecretId: secretId,
 						Endpoint: g.config.Vault.AppRoleMount,
-						Wrap:     100 * time.Minute,
+						Wrap:     1 * time.Minute,
 					}
 					if token, err := uns.Token(); err == nil {
 						g.metrics.Success()
